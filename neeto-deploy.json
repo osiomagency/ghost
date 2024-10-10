@@ -1,0 +1,44 @@
+{
+  "name": "ghost-blog",
+  "scripts": {},
+  "env": {
+    "SECRET_KEY_BASE": {
+      "generator": "secret"
+    },
+    "NODE_ENV": {
+      "value": "production"
+    },
+    "DATABASE_URL": {
+      "required": true
+    },
+    "GHOST_ADMIN_URL": {
+      "required": true
+    },
+    "LOG_LEVEL": {
+      "value": "INFO"
+    },
+    "YARN_PRODUCTION": {
+      "value": "true"
+    },
+    "YARN_CACHE": {
+      "value": "true"
+    },
+    "NODE_MODULES_CACHE": {
+      "value": "true"
+    }
+  },
+  "formation": {},
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
