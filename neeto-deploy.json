@@ -8,9 +8,6 @@
     "NODE_ENV": {
       "value": "production"
     },
-    "DATABASE_URL": {
-      "required": true
-    },
     "GHOST_ADMIN_URL": {
       "required": true
     },
