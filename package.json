@@ -45,6 +45,10 @@
     "tb": "docker run --rm -v $(pwd):/ghost -w /ghost/ghost/tinybird -it tinybirdco/tinybird-cli-docker",
     "tb:update": "docker pull tinybirdco/tinybird-cli-docker"
   },
+  "engines": {
+    "node": "18.x",
+    "yarn": "1.x"
+  },
   "resolutions": {
     "@tryghost/errors": "1.3.5",
     "@tryghost/logging": "2.4.18",
